@@ -3,6 +3,9 @@
     <a href="/post/{{id}}" class="card-title">{{title}}</a>
     <div class="meta">
       <p>
+        {{vote_count}}
+        {{format_plural "point" vote_count}}
+        by
         {{user.username}}
         on
         {{format_date created_at}}

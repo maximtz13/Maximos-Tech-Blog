@@ -1,7 +1,8 @@
-<div class="comments">
+<div class="comments m-5">
+  <h3 class="text-uppercase card-header text-c m-5 com-head">Comments Below</h3>
   {{#each this}}
-    <section class="comment">
-      <div class="meta">
+    <section class="comment card">
+      <div class="meta card-header">
         {{user.username}}
         on
         {{format_date created_at}}

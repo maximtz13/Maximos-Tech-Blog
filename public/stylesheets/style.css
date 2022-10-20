@@ -222,6 +222,14 @@ button {
   font-size: 20px;
 }
 
+.com-head {
+  width: 99%;
+}
+
+.comment-body {
+  width: 100%;
+}
+
 /* FORM */
 .form-label,
 .form-input,
@@ -250,6 +258,19 @@ button {
 .text-c {
   text-align: center;
   justify-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+textarea {
+  min-width: 100%;
+  min-height: 400px;
+}
+
+.card2 {
+  border: none;
 }
 
 /* HEIGHT / WIDTH UTILS */
