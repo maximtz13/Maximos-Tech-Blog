@@ -1,15 +1,4 @@
-async function logout() {
-  const response = await fetch("/api/users/logout", {
-    method: "post",
-    headers: { "Content-Type": "application/json" },
-  });
-
-  if (response.ok) {
-    document.location.replace("/");
-  } else {
-    alert(response.statusText);
-  }
-}
+const logout = require("./logout");
 
 function idleLogout() {
   var t;
@@ -22,9 +11,11 @@ function idleLogout() {
   window.onkeydown = resetTimer;
   window.addEventListener("scroll", resetTimer, true);
 
+  logout();
+
   function resetTimer() {
     clearTimeout(t);
-    t = setTimeout(logout, 900000); // time is in milliseconds
+    t = setTimeout(logout, 10); // time is in milliseconds
   }
 }
 idleLogout();
@@ -32,5 +23,3 @@ idleLogout();
 window.onload = function () {
   idleLogout();
 };
-
-document.querySelector("#logout").addEventListener("click", logout);
