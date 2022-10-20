@@ -66,8 +66,8 @@ a {
   font-size: 1.3rem;
   text-decoration: none;
   padding: 6px 5px;
-  width: 15%;
-  display: block;
+  width: 10%;
+  /* display: block; */
   margin: 5px 15px 5px 0px;
   border-radius: var(--border-radius);
   color: var(--primary);
@@ -113,6 +113,15 @@ a {
   box-shadow: 2px 2px var(--dark);
 }
 
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
 .hero {
   padding: 0px 25px 30px 40px;
   background-color: var(--dark);
@@ -131,6 +140,10 @@ a {
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
+}
+
+.list-style {
+  list-style: none;
 }
 
 .list-group {

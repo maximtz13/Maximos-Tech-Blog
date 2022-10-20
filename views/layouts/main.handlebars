@@ -10,9 +10,10 @@
   <body class="flex-column min-100-vh">
     <header class="hero">
         <nav>
+            <a href="/" class="btn">Home</a>
             {{#if loggedIn}}
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="btne">logout</button>
+            <a href="/dashboard" class="btn">Dashboard</a>
+            <button id="logout" class="btn">Logout</button>
             {{else}}
             <a href="/login" class="btn">Login</a>
             {{/if}}
@@ -23,9 +24,6 @@
     <main class="flex-row justify-space-between">
       {{{body}}}
     </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
 
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
