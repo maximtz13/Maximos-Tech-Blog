@@ -79,6 +79,12 @@ a {
   text-align: left;
 }
 
+.btn2 {
+  width: 30%;
+  background-color: var(--dark);
+  text-align: center;
+}
+
 .btn:hover {
   color: var(--primary);
   background-color: var(--tertiary);
@@ -235,6 +241,15 @@ button {
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.text-c {
+  text-align: center;
+  justify-content: center;
 }
 
 /* HEIGHT / WIDTH UTILS */
