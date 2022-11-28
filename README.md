@@ -32,3 +32,7 @@ If your question is still unsolved, please send it to *maximtz99@gmail.com* and 
 ## Photo
 
 !["Sample Photo"](<./assets/img/Screenshot (36).png>)
+
+## Deployed Site
+
+[Click Here](https://maximos-tech-blog.herokuapp.com)
